@@ -14,10 +14,10 @@ import java.util.List;
 @Slf4j
 @EnableScheduling
 @Configuration
-public class SchedulerConfig {
+public class CartSchedulerConfig {
 
-	public static final int TTL = 600000;
-	public static final int EVERY_MINUT = 10000;
+	public static final int TTL = 1000*60*6;
+	public static final int EVERY_MINUT = 1000*60;
 
 	@Autowired
 	private CartRepository cartRepository;
